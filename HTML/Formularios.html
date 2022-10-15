@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios</title>
+<link href="../CCS/Style_page.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+  <h1>Formularios&nbsp;</h1>
+</header>
+<nav>
+	<ul id="menú_nav">
+    <li><a href="Formatos_Texto.html" target="_blank">Formatos de texto</a></li>
+    <li><a href="Listas.html" target="_blank">Listas</a></li>
+    <li>&nbsp;<a href="Enlaces.html" target="_blank">Enlaces</a></li>
+	<li>&nbsp;<a href="Tablas.html" target="_blank">Tablas</a></li>
+	<li>&nbsp;<a href="Imágenes.html" target="_blank">Imágenes</a></li>
+	<li>&nbsp;<a href="Audio.html" target="_blank">Audios</a></li>
+	<li>&nbsp;<a href="Videos.html" target="_blank">Videos</a></li>
+	<li>&nbsp;<a href="Formularios.html" target="_blank">Formularios</a></li>
+  </ul>
+	</nav>
+<main>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, in, omnis. Illo veniam numquam incidunt consequatur omnis voluptas dolores, earum explicabo obcaecati inventore minus architecto laboriosam id, natus alias. Omnis!</p>
+    <form id="form1" name="form1" method="get">
+      <label for="nombre">&nbsp;Nombre:</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="Apellido">
+		  <br>
+		  <br>
+		  Apellido:</label>
+      <input type="text" name="Apellido" id="Apellido">
+      <input type="submit" name="Boton1" id="Boton1" value="Enviar">
+      
+    </form>
+  </section>
+<section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, in, omnis. Illo veniam numquam incidunt consequatur omnis voluptas dolores, earum explicabo obcaecati inventore minus architecto laboriosam id, natus alias. Omnis!</p>
+    <form id="form2" name="form2" method="get">
+      <label for="select3">¿De qué país nos visitas?:</label>
+      <select name="pais2" id="select">
+        <option value="mx">México</option>
+        <option value="us">Estados Unidos</option>
+        <option value="es">España</option>
+        <option value="ar">Argentina</option>
+        <option value="co">Colombia</option>
+        <option value="it">Italia</option>
+      </select>
+      <br>
+      <br>
+      <label>Género&nbsp;</label>
+      <p>
+        <label>
+          <input type="radio" name="G&eacute;nero" value="Mujer" id="Geacutenero_0">
+          Femenino</label>
+        <br>
+        <label>
+          <input type="radio" name="G&eacute;nero" value="Hombre" id="Geacutenero_1">
+          Masculino</label>
+        <br>
+      </p>
+      <label>¿Cuál será tu residencia durante tu estancia?&nbsp;</label>
+      <table width="200">
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Residencia temporal" value="Hotel" id="Residenciatemporal_0">
+            Hotel</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Residencia temporal" value="Particular" id="Residenciatemporal_1">
+            Domicilio de amigos/familia</label></td>
+        </tr>
+        <tr>
+          <td><label>
+            <input type="checkbox" name="Residencia temporal" value="Airbnb" id="Residenciatemporal_2">
+            Aribnb</label></td>
+        </tr>
+      </table>
+<br>
+      <input type="submit" name="Boton2" value="Enviar" id="Boton2">
+      &nbsp;
+    </form>
+  </section>
+  <section>
+    <h2>Fromulario usando select, checkbox y radiobutton&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, in, omnis. Illo veniam numquam incidunt consequatur omnis voluptas dolores, earum explicabo obcaecati inventore minus architecto laboriosam id, natus alias. Omnis!</p>
+    <form action="Procesamiento.html" method="post" name="form3" id="form3">
+      
+      
+      <label for="nombre">Nombre:</label>
+      <input name="nombre" type="text" required="required" id="nombre" form="form3" placeholder="Escribe tu nombre">
+      
+      <label for="email">Email:</label>
+      <input name="email" type="email" id="email" placeholder="correo_ejemplo@gmail.com">
+
+
+      
+      <label for="mensaje">Mensaje:</label>
+      <textarea name="mensaje" rows="6" maxlength="150" id="mensaje" form="form3" placeholder="Escribe un comentario..."></textarea>
+      <input type="submit" name="Boton3" id="Boton3" value="Enviar">
+      
+    </form>
+</section>
+  <section>
+    <h2>Formulario propio&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, in, omnis. Illo veniam numquam incidunt consequatur omnis voluptas dolores, earum explicabo obcaecati inventore minus architecto laboriosam id, natus alias. Omnis!</p>
+    <form id="form4" name="form4" method="post">
+  <label for="fname">Nombre(s):</label>
+  <br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Apellidos:</label>
+  <br>
+  <input type="text" id="lname" name="lname"><br><br>
+  
+  
+      <label for="email2">Email:</label>
+      <input name="email2" type="email" id="email2" placeholder="correo_ejemplo@gmail.com">
+      <label for="tel">Tel:</label>
+      <input type="tel" name="tel" id="tel">
+&nbsp; <br>
+<br>
+<label for="myfile">Sube tu CV en formato PDF&nbsp; :</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+		<label for="h">Temporada de interés:</label>
+  <input type="month" id="temporada" name="temporada">
+  <br>
+<br>
+  <label>Selecciona el programa al que te diriges&nbsp;</label>
+  <br>
+<input type="radio" id="html" name="Programa" value="Tanz">
+  <label for="html">Tanz der vampire&nbsp;</label>
+  <br>
+<input type="radio" id="János" name="Programa" value="Janos">
+  <label for="css">János vitéz</label>
+<br>
+<input type="radio" id="Janos" name="Programa" value="Jekill">
+  <label for="css">Jekyll &amp; Hyde&nbsp;</label>
+  &nbsp; <br>
+<input type="radio" id="Rebecca" name="Programa" value="Rebecca">
+  <label for="Rebecca">Rebecca</label><br><br>
+  <input type="submit" formaction="Procesamiento.html" value="Submit">
+		<input type="reset">
+    </form>
+</section>
+&nbsp;</main>
+<footer>
+  <h6>Elaborado por: Michelle Adrianan Ortiz Pérez&nbsp;&nbsp;</h6>
+&nbsp;</footer>
+</body>
+</html>
